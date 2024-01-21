@@ -1,4 +1,4 @@
-# Four Seasons-VR
+# Four Forest Seasons-VR
 
 Dunia virtual atau lebih popular disebut Virtual Reality (VR) adalah teknologi komputer yang menciptakan lingkungan 3D semirip mungkin dengan dunia yang diinginkan pembuat, sehingga pengguna dapat berinteraksi di dalamnya. Untuk tugas Pertemuan 12 ini saya diminta membuat sebuah proyek VR. Disini saya membuat sebuah Dunia virtual dengan tema Four Seasons untuk menampilkan empat buah dunia yang saling terhubung menggunakan sebuah bar lingkaran yang dapat diklik. Proyek ini dibuat memakai A-frame dan beberapa script lain, sehingga dapat membuat sebuagh dunia virtual dengan syntax html. 
 
