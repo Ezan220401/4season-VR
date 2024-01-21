@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+
+    <title>Summer Forest</title>
+
+    <script>
+        document.querySelector("#nextSeason").addEventListener("click", e=> {
+          location.href = "autum.html";
+        });
+    </script>
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+    <script src="src/aframe-particle-system-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-event-set-component/master/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/@editvr/aframe-simple-link-component/dist/aframe-simple-link-component.min.js"></script>
+
+
+</head>
+<body>
+    <a-scene>
+        <!-- Ground Summer Forest-->
+        <a-entity environment="preset: forest; sunPosition: 1 5 -2;"></a-entity>
+        <a-camera>
+            <a-cursor></a-cursor>
+        </a-camera>
+        
+        <!-- Tree -->
+        <a-cylinder
+            position="-1 2.3 -40"
+            scale="2 30 2"
+            material="src: url(https://static.vecteezy.com/system/resources/thumbnails/000/164/514/small/Free_Woodgrain_Vector-04.jpg)"
+            ><a-entity geometry="primitive: cone" 
+                position="0 0.5 0"
+                scale="6 0.5 6"
+                material="src: url(https://as1.ftcdn.net/v2/jpg/01/90/91/48/1000_F_190914896_FCwTd05oVSAp1UB3d12wktNrbrz8SJ6Y.jpg)"
+            ></a-entity>
+            <a-entity geometry="primitive: cone" 
+                position="0 1 0"
+                scale="5 1 5"
+                material="src: url(https://as1.ftcdn.net/v2/jpg/01/90/91/48/1000_F_190914896_FCwTd05oVSAp1UB3d12wktNrbrz8SJ6Y.jpg)"
+            ></a-entity>
+            <a-entity geometry="primitive: cone" 
+                position="0 1.5 0"
+                scale="4 1 4"
+                material="src: url(https://as1.ftcdn.net/v2/jpg/01/90/91/48/1000_F_190914896_FCwTd05oVSAp1UB3d12wktNrbrz8SJ6Y.jpg)"
+            ></a-entity>
+        </a-cylinder>
+
+        <!-- Link -->
+        <a-entity 
+            event-set__color="_event:mouseenter;color:blue;"
+            id="nextSeason" position="-6 2 -10" color="red" 
+            simple-link="foo: bar; href: autum.html; title:Next Season"
+            animation__move="property: position; to: 0 2 -10; dur: 3000; ; loop:false;"></a-entity>
+
+    </a-scene>
+</body>
+</html>

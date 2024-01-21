@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <title>Autum Maple</title>
+
+    <script>
+      document.querySelector("#nextSeason").addEventListener("click", e=> {
+        location.href = "spring.html";
+      });
+    </script>
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+    <script src="src/aframe-particle-system-component.min.js"></script>
+    <script src="https://rawgit.com/ngokevin/aframe-event-set-component/master/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/@editvr/aframe-simple-link-component/dist/aframe-simple-link-component.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+      <!-- Ground = Autum Maple -->
+      <a-entity
+        environment="preset: forest; sunPosition: 1 5 -2; groundColor: #98964D; ground: flat; dressingColor: #4a1206;"></a-entity>
+
+      <a-camera>
+        <a-cursor></a-cursor>
+      </a-camera>
+
+      <!-- Tree -->
+      <a-cylinder
+        position="-1 0.5 -40"
+        scale="2 30 2"
+        material="src: url(https://media.istockphoto.com/id/466135044/photo/close-up-of-brown-tree-bark-texture.jpg?s=612x612&w=0&k=20&c=UwmRr0br77ZOobojE8rfuDeScHivCxk9mXky1d5v07I=)"
+        ><a-entity
+          geometry="primitive: box"
+          position="0 0.5 0"
+          scale="4 0.3 4"
+          material="src: url(https://www.shutterstock.com/image-photo/red-orange-autumn-leaves-background-600nw-740788114.jpg)"
+        ></a-entity>
+        <a-entity
+          geometry="primitive: box"
+          position="0 0.5 0"
+          scale="3 0.4 3"
+          material="src: url(https://www.shutterstock.com/image-photo/red-orange-autumn-leaves-background-600nw-740788114.jpg)"
+        ></a-entity>
+      </a-cylinder>
+
+      <!-- Link -->    
+      <a-entity 
+        color="red"
+        id="nextSeason" position="5 -2 -10" color="red" 
+        simple-link="foo: bar; href: winter.html; title:Next Season"
+        animation__move="property: position; to: 0 1 -10; dur: 3000; ; loop:false;"></a-entity>
+    </a-box>
+    </a-scene>
+  </body>
+</html>
