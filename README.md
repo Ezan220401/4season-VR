@@ -13,3 +13,9 @@ Objek utamanya adalah pohon besar dengan texture daun maple berwarna coklat. Sel
 
 Dunia 4 (Winter Sphare)
 Objek utamanya adalah pohon besar dengan texture dedaunan bersalju untuk menambah kesan musim dingin. Selain itu saya memakai environment forest dengan pohon berwarna hijau kebiruan dan particle system dust untuk memberi efek salju yang turun. Selain itu ada bola lampu untuk menerangi area sekitar pohon besar, karena dunia itu menceritakan malam bersalju.
+
+
+# Cara Menjalankan
+1. Jalankan salah satu file html
+2. Arahkan kursor ke foobar dan klik untuk berpindah dunia atau musim
+3. Khusus pada dunia Winter Sphare, dapat mengklik bola, atau sphare untuk menerangi area sekitar
