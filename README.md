@@ -19,3 +19,6 @@ Objek utamanya adalah pohon besar dengan texture dedaunan bersalju untuk menamba
 1. Jalankan salah satu file html
 2. Arahkan kursor ke foobar dan klik untuk berpindah dunia atau musim
 3. Khusus pada dunia Winter Sphare, dapat mengklik bola, atau sphare untuk menerangi area sekitar
+
+# Atau anda dapat mengklik laman berikut
+https://ezan220401.github.io/4season-VR/ 
