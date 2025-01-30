@@ -11,7 +11,7 @@ Objek utamanya adalah pohon besar dengan texture dedaunan untuk menambah kesan m
 Dunia 3 (Autum Maple)
 Objek utamanya adalah pohon besar dengan texture daun maple berwarna coklat. Selain itu saya memakai environment forest dengan pohon-pohon berwarna coklat khas musim gugur.
 
-Dunia 4 (Winter Sphare)
+Dunia 4 (Golden Winter)
 Objek utamanya adalah pohon besar dengan texture dedaunan bersalju untuk menambah kesan musim dingin. Selain itu saya memakai environment forest dengan pohon berwarna hijau kebiruan dan particle system dust untuk memberi efek salju yang turun. Selain itu ada bola lampu untuk menerangi area sekitar pohon besar, karena dunia itu menceritakan malam bersalju.
 
 
